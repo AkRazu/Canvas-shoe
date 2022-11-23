@@ -9,7 +9,7 @@ const Shop = () => {
   useEffect(() => {
     fetch("products.json")
       .then((response) => response.json())
-      .then((data) => setShoes(data.slice(0, 6)));
+      .then((data) => setShoes(data.slice(0, 9)));
   }, []);
   const addProductHandel = (item) => {
     const newProduct = [...cart, item];
