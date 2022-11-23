@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+.nav-logo h1 {
+  color: #202020;
+}
+.hot {
+  background-color: red;
+  color: #fff;
+  font-size: 9px;
+  padding: 2px 4px;
+}
+.nav-menu a {
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #202020;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid transparent;
+  position: relative;
+}
+.nav-menu a::after {
+  background-color: #f9af47;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+}
