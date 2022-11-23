@@ -9,7 +9,7 @@ const Shop = () => {
   useEffect(() => {
     fetch("products.json")
       .then((response) => response.json())
-      .then((data) => setShoes(data));
+      .then((data) => setShoes(data.slice(0, 6)));
   }, []);
   const addProductHandel = (item) => {
     const newProduct = [...cart, item];
@@ -27,10 +27,7 @@ const Shop = () => {
     const choose = cart[Math.floor(Math.random() * cart.length)];
     setRandom(choose);
   };
-  const clearAllHandel = () => {
-    const product = [];
-    setCart(product);
-  };
+  const clearAllHandel = () => setCart([]) || setRandom([]);
   return (
     <div className="shop-container">
       <div className="shoe-container">
