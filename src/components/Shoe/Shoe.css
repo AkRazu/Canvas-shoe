@@ -14,35 +14,40 @@
 .shoe-tex {
   text-align: center;
 }
-.shoe-tex h4{
-    margin: 10px;
+.shoe-tex h4 {
+  margin: 10px;
 }
-.shoe-price{
-    color: #F9AF47;
-    margin-top: 5px;
+.shoe-price {
+  color: #f9af47;
+  margin-top: 5px;
 }
 .btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   width: 100%;
   position: absolute;
   bottom: 0;
   border: none;
   border-radius: 0px 0px 10px 10px;
-  background-color: #F9AF47;
+  background-color: #f9af47;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1.2px;
   cursor: pointer;
 }
-
-@media screen and (max-width: 767px){
-    .shoeSection {
-        border: 2px solid #a8a8a82c;
-        border-radius: 10px;
-        position: relative;
-        min-height: 580px;
-      }
+.icon{
+    margin: 0px 5px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    
+
+@media screen and (max-width: 767px) {
+  .shoeSection {
+    border: 2px solid #a8a8a82c;
+    border-radius: 10px;
+    position: relative;
+    min-height: 580px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 }

@@ -37,6 +37,10 @@ const Shop = () => {
         {cart.map((product, idx) => (
           <Cart key={idx} product={product}></Cart>
         ))}
+        <div className="button-container">
+          <button className="choose">Choose 1 for me</button>
+          <button className="clear">Clear all</button>
+        </div>
       </div>
     </div>
   );

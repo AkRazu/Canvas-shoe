@@ -16,7 +16,36 @@
 .shopping-header {
   text-align: center;
 }
-
+.button-container{
+  margin: 10px 20px;
+}
+.button-container button{
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0px;
+}
+.choose{
+  font-size: 17px;
+  background-color:#010101;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all 1.2s ease;
+}
+.clear{
+  font-size: 17px;
+  background-color:#F9AF47;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.choose:hover{
+  background-color: #F9AF47;
+}
 @media screen and (max-width: 767px) {
   .shop-container {
     display: flex;
