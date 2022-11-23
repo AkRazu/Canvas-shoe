@@ -30,10 +30,12 @@ const Question = () => {
             argument if the initial state has to be computed
           </p>
         </div>
-        <footer>
-            <p>All Right reserved by <b>Code Ninja</b></p>
-        </footer>
       </div>
+      <footer>
+        <p className="footer">
+          All Right reserved by <b>Code Ninja</b>
+        </p>
+      </footer>
     </div>
   );
 };
