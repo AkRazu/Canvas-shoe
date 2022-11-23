@@ -1,26 +1,26 @@
-.question-container{
-    margin: 20px 50px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+.question-container {
+  margin: 20px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.footer{
-    text-align: center;
+.footer {
+  text-align: center;
 }
-@media screen and (max-width: 767px){
-    .question-container{
-        margin: 20px 50px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
+@media screen and (max-width: 767px) {
+  .question-container {
+    margin: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .question-container{
-        margin: 20px 50px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .question-container {
+    margin: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }

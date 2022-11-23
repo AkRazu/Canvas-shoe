@@ -33,7 +33,7 @@ const Question = () => {
       </div>
       <footer>
         <p className="footer">
-        &copy; All Right reserved by <b>Code Ninja</b>
+          &copy; All Right reserved by <b>Code Ninja</b>
         </p>
       </footer>
     </div>
