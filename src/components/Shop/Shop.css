@@ -13,20 +13,35 @@
   border-radius: 10px;
   margin: 0px 20px;
 }
+.random h3{
+  text-align: center;
+}
 .shopping-header {
   text-align: center;
 }
-.button-container{
+.random-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0px 40px;
+  padding: 10px;
+}
+.random-product img {
+  width: 20%;
+  border-radius: 20px;
+}
+.button-container {
   margin: 10px 20px;
 }
-.button-container button{
+.button-container button {
   width: 100%;
   padding: 15px;
   margin: 10px 0px;
 }
-.choose{
+.choose {
   font-size: 17px;
-  background-color:#010101;
+  background-color: #010101;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -34,18 +49,19 @@
   letter-spacing: 1.2px;
   transition: all 1.2s ease;
 }
-.clear{
+.clear {
   font-size: 17px;
-  background-color:#F9AF47;
+  background-color: #f9af47;
   color: #fff;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
-.choose:hover{
-  background-color: #F9AF47;
+.choose:hover {
+  background-color: #f9af47;
 }
+
 @media screen and (max-width: 767px) {
   .shop-container {
     display: flex;
@@ -62,13 +78,13 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .shop-container {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-      .cart-container {
-        margin: 50px 5px;
-      }
+  .shop-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cart-container {
+    margin: 50px 5px;
+  }
   .shoe-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

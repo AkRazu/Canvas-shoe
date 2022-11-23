@@ -5,6 +5,7 @@ import "./Shop.css";
 const Shop = () => {
   const [shoes, setShoes] = useState([]);
   const [cart, setCart] = useState([]);
+  const [random, setRandom] = useState([]);
   useEffect(() => {
     fetch("products.json")
       .then((response) => response.json())
@@ -20,6 +21,15 @@ const Shop = () => {
         setCart(newProduct);
       }
     }
+  };
+  //   console.log(cart);
+  const chooseHandler = () => {
+    const choose = cart[Math.floor(Math.random() * cart.length)];
+    setRandom(choose);
+  };
+  const clearAllHandel = () => {
+    const product = [];
+    setCart(product);
   };
   return (
     <div className="shop-container">
@@ -37,9 +47,27 @@ const Shop = () => {
         {cart.map((product, idx) => (
           <Cart key={idx} product={product}></Cart>
         ))}
+        <hr />
+        <div className="choose-product">
+          {random === undefined ? (
+            []
+          ) : (
+            <div className="random">
+              <h3>Best product for you</h3>
+              <div className="random-product">
+                <img src={random?.img} alt="" />
+                <p>{random?.name}</p>
+              </div>
+            </div>
+          )}
+        </div>
         <div className="button-container">
-          <button className="choose">Choose 1 for me</button>
-          <button className="clear">Clear all</button>
+          <button onClick={chooseHandler} className="choose">
+            Choose 1 for me
+          </button>
+          <button onClick={clearAllHandel} className="clear">
+            Clear all
+          </button>
         </div>
       </div>
     </div>
