@@ -1,4 +1,9 @@
-## Available Scripts
+## `Details About this project`
+
+It's a basic shoe shop here you can choose `product`.
+suppose you choose tons of items here, and after choosing the items you are confused about which product you need to buy... don't worry here you can get the option that will help you to get your product . 😊 [Visit here](https://cool-seahorse-180ff6.netlify.app/)
+
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -35,8 +40,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### `Details About this project`
-
-It's a basic shoe shop here you can choose `product`.
-suppose you choose tons of items here, and after choosing the items you are confused about which product you need to buy... don't worry here you can get the option that will help you to get your product . 😊 [Visit here](https://cool-seahorse-180ff6.netlify.app/)
 
